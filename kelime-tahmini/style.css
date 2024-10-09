@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Advent Pro", sans-serif;
+    outline: 0;
+}
+html,
+body{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(6127deg , #610000,#270000);
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #4e3a3a;
+    text-align: center;
+}
+.container{
+    background-color: hwb(0 100% 0% / 0.742);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(250, 250,200, 0.7);
+}
+.info{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.info .wrong span{
+    text-decoration: underline;
+    padding: 4px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.buttons button{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 48%;
+    padding: 5px 1rem;
+    border-radius: 4px;
+    background-color: hsla(0, 20%, 78%, 0.971);
+    cursor: pointer;
+    border: 1px solid grey;
+    transition: 300ms all;
+}
+.buttons button:hover{
+    background-color: hsla(0, 22%, 65%, 0.971);
+}
+
+
+/*
+*/
+
+.word{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.word input{
+    text-align: center;
+    height: 5rem;
+    width: 5rem;
+    margin: 4px;
+    color: #ff0;
+    background-color: #4e3a3a;
+    border-radius: 4px;
+    background-color: none;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: bold;
+    box-shadow: 0 4px 5px  rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+}
+.word input:first-child{
+    margin-left: 0;
+}
+
+.type-input{
+    z-index: -5;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+}
+

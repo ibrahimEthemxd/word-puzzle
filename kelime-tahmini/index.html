@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelime Tahmin Oyunu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>İEÖ - Kelimeyi Bul</h1>
+      <div class="wrapper">
+        <input class="type-input" type="text" maxlength="1" />
+        <div class="word">
+          <input type="text" />
+        </div>
+        <div class="info">
+          <div class="guess">Tahmin: <span></span></div>
+          <div class="wrong">Hata: <span></span></div>
+          <div class="hint">İpucu: <span></span></div>
+        </div>
+        <div class="buttons">
+          <button class="reset">Tekrar</button>
+          <button class="show-hint">İpucu Göster</button>
+        </div>
+      </div>
+    </div>
+    <script src="word.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
